@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+
+<link rel="stylesheet" href="css/test.css">
+<link rel="stylesheet" href="css/pushy.css">
+<link rel="stylesheet" href="css/normalize.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src='js/scrollReveal.min.js'></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/jquery.textFx.js"></script>
+
+	<script>
+			$(document).ready(function() {
+				$('.moji').textFx({
+					type: 'slideIn', //動きfadeIn  slideIn  rotate  scale
+			    iChar: 100, //文字間の表示間隔
+			    iAnim: 500, //アニメーションの速度
+			    direction: 'top' //現れる方向slideのみ
+				});
+			});
+
+	</script>
+</head>
+<body>
+	<nav class="pushy pushy-left">
+		<ul>
+	  	<li><a href="#">Item 1</a></li>
+	    <li><a href="#">Item 2</a></li>
+	    <li><a href="#">Item 3</a></li>
+	    <li><a href="#">Item 4</a></li>
+	    <li><a href="#">Item 5</a></li>
+	    <li><a href="#">Item 6</a></li>
+		</ul>
+	</nav>
+
+<div class="site-overlay"></div>
+<div id="container">
+	<div class="menu-btn">&#9776; Menu</div>
+
+	<p><h1>Test</h1></p>
+	<div data-sr="enter left, hustle 20px"> Chips Ahoy! </p>
+		<div data-scrollreveal="enter top move 25px"> Foo </div>
+		<p class="moji">abc<p>
+</div>
+
+<script src="js/pushy.min.js"></script>
+</body>
+</html>
